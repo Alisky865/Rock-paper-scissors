@@ -109,9 +109,9 @@
    
    document.querySelector('.moves').innerHTML =
    `You
-     <img src="/Projects Images/${playerMove}.png"
+     <img src="${playerMove}.png"
      id="movesimage">
-   Computer <img src="/Projects Images/${computerMove}.png" id="movesimage">`;
+   Computer <img src="${computerMove}.png" id="movesimage">`;
 
 
      document.querySelector('.results').innerHTML =
