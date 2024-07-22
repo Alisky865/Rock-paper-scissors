@@ -108,8 +108,7 @@
    
    
    document.querySelector('.moves').innerHTML =
-   `You
-     <img src="${playerMove}.png"
+   `You <img src="${playerMove}.png"
      id="movesimage">
    Computer <img src="${computerMove}.png" id="movesimage">`;
 
