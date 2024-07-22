@@ -11,11 +11,11 @@
 
    document.body.addEventListener("keydown",
      (event)=>{
-       if(event.key === 'r'){playGame('Rock')}
+       if(event.key === 'r'){playGame('rock')}
 
-       else if(event.key === 'p'){playGame('Paper')}
+       else if(event.key === 'p'){playGame('paper')}
 
-       else if(event.key === 's'){playGame('Scissors')}
+       else if(event.key === 's'){playGame('scissors')}
 
        else if(event.key === 'a'){autoPlay()}
 
@@ -61,22 +61,22 @@
 
     let computerMove ='';
   
-    if (randomNumber1 >=0 && randomNumber1 <=1/3) {computerMove ='Rock';}
-     else if (randomNumber1 >=1/3 && randomNumber1  <=2/3) {computerMove='Paper';}
-     else if (randomNumber1 >=2/3 && randomNumber1 <=1) {computerMove='Scissors';}
+    if (randomNumber1 >=0 && randomNumber1 <=1/3) {computerMove ='rock';}
+     else if (randomNumber1 >=1/3 && randomNumber1  <=2/3) {computerMove='paper';}
+     else if (randomNumber1 >=2/3 && randomNumber1 <=1) {computerMove='scissors';}
 
      return computerMove;}
 
 
 
    document.querySelector('#button1')
-      .addEventListener('click',()=>{playGame('Rock')})
+      .addEventListener('click',()=>{playGame('rock')})
 
    document.querySelector('#button2')
-      .addEventListener('click',()=>{playGame('Paper')})
+      .addEventListener('click',()=>{playGame('paper')})
 
    document.querySelector('#button3')
-      .addEventListener('click',()=>{playGame('Scissors')})
+      .addEventListener('click',()=>{playGame('scissors')})
 
       
   function playGame(playerMove)
@@ -84,20 +84,20 @@
 
     let results = '';
 
-    if (playerMove === 'Rock')
-       {if (computerMove==='Rock') {results ='Tied';}
-       else if (computerMove==='Paper') {results ='Computer Win';}
-       else if (computerMove==='Scissors') {results ='You Win';}}
+    if (playerMove === 'rock')
+       {if (computerMove==='rock') {results ='Tied';}
+       else if (computerMove==='paper') {results ='Computer Win';}
+       else if (computerMove==='scissors') {results ='You Win';}}
 
-    else if (playerMove === 'Paper')
-       {if (computerMove==='Rock') {results ='You Win';}
-       else if (computerMove==='Paper') {results ='Tied';}
-       else if (computerMove==='Scissors') {results ='Computer Win';}}
+    else if (playerMove === 'paper')
+       {if (computerMove==='rock') {results ='You Win';}
+       else if (computerMove==='paper') {results ='Tied';}
+       else if (computerMove==='scissors') {results ='Computer Win';}}
 
-    else if (playerMove === 'Scissors')
-       {if (computerMove==='Rock') {results ='Computer Win';}
-       else if (computerMove==='Paper') {results ='You Win';}
-       else if (computerMove==='Scissors') {results ='Tied';}}
+    else if (playerMove === 'scissors')
+       {if (computerMove==='rock') {results ='Computer Win';}
+       else if (computerMove==='paper') {results ='You Win';}
+       else if (computerMove==='scissors') {results ='Tied';}}
 
    ////////////////////////////////
 
